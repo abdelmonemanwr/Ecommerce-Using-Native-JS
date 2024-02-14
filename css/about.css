@@ -1,0 +1,414 @@
+.about {
+  padding: 0px 0;
+  /* background-image: url("../images/ecommerce2.jpg"); */
+  background-size: contain;
+  background-attachment: fixed;
+}
+.about-section {
+  background: #0000008a;
+}
+.about-section .sec-title {
+  /* margin-bottom: 40px; */
+  position: relative;
+  /* z-index: 1; */
+}
+
+.about-section .sec-title {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  color: #eee;
+  font-weight: 500;
+  margin: 20px;
+}
+.title {
+  position: relative;
+  display: block;
+  font-size: 30px;
+  line-height: 30px;
+  color: wheat;
+  font-weight: 700;
+  padding: 20px 0;
+} 
+.about-section .sec-title h2 {
+  position: relative;
+  display: block;
+  font-size: 40px;
+  line-height: 1.28em;
+  color: #000000;
+  font-weight: 600;
+  padding-bottom: 18px;
+}
+
+.about-section.sec-title h2:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  bottom: 0px;
+  width: 50px;
+  height: 3px;
+  background-color: #d1d2d6;
+}
+
+.about .sec-title p {
+  color: #eeeeee;
+  position: relative;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-top: 35px;
+}
+
+.about-section .sec-title.light h2 {
+  color: #ffffff;
+}
+
+.about-section .sec-title.text-center h2:before {
+  left: 50%;
+  margin-left: -25px;
+}
+
+.about-section .list-style-one {
+  position: relative;
+}
+
+.about-section .list-style-one li {
+  position: relative;
+  font-size: 16px;
+  line-height: 26px;
+  color: #222222;
+  font-weight: 400;
+  padding-left: 35px;
+  margin-bottom: 12px;
+}
+
+.about-section .list-style-one li:before {
+  content: "\f058";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  display: block;
+  font-size: 18px;
+  padding: 0px;
+  color: #ff2222;
+  font-weight: 600;
+  -moz-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1.6;
+  font-family: "Font Awesome 5 Free";
+}
+
+.about-section .list-style-one li a:hover {
+  color: #b8b0b0;
+}
+
+.about-section .btn-style-one {
+  /* position: relative; */
+  display: flex;
+  width: fit-content;
+  /* margin-left: auto;
+  margin-right: auto; */
+  font-size: 17px;
+  line-height: 30px;
+  color: skyblue;
+  padding: 10px 30px;
+  font-weight: 600;
+  overflow: hidden;
+  letter-spacing: 0.02em;
+  background-color: #000;
+  transition: all 0.3s ease;
+  border-radius: 15px;
+  border: 2px solid #000;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  justify-content: end;
+  letter-spacing: 0.02em;
+}
+
+.about-section .btn-style-one:hover {
+  color: gold;
+}
+.about-section {
+  position: relative;
+  /* padding: 120px 0 70px; */
+  margin-top: 70px;
+}
+
+.about-section .sec-title {
+  margin-bottom: 45px;
+}
+
+.about-section .content-column {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.about-section .content-column .inner-column {
+  position: relative;
+  padding: 0px 50px;
+
+}
+
+.btn-box{
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.theme-btn{
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.inner-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  column-gap: 5px;
+}
+
+.about-section .text {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #eee;
+  font-weight: 400;
+}
+
+.text{
+  padding: 20px;
+}
+
+.team-section .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.team-section .column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.team-section .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .team-section .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .team-section .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Allura|Josefin+Sans");
+
+.team-section .wrapper {
+  margin-top: 50px;
+}
+
+.team-section .wrapper h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.team-section .team_member {
+  background: #eee;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: gray;
+  position: relative;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.team-section .team_member h3 {
+  color: #b8b0b0;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team-section .team_member p.role {
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team-section .team_member .team_img {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+.team-section .team img {
+  border-radius: 50%;
+}
+
+.team-section .team_member .team_img img {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+
+/*  Testimonial */
+.testimonial-section {
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  background-image: url("../images/bg1.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position-y: center;
+}
+.testimonial-section .slideshow-container {
+  /* max-width:900px; */
+  position: relative;
+  background: #000000c9;
+  font-family: Verdana, sans-serif;
+  margin: auto;
+}
+
+/* Slides */
+.testimonial-section .mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+  height: 350px;
+}
+
+/* Next & previous buttons */
+.testimonial-section .prev,
+.testimonial-section .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -30px;
+  padding: 12px 20px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.testimonial-section .next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.testimonial-section .prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  border-radius: 50%;
+}
+
+/* The dot/bullet/indicator container */
+.testimonial-section .dot-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* The dots/bullets/indicators */
+.testimonial-section .dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.testimonial-section .active {
+  background-color: #eee;
+  width: 30px;
+  border-radius: 90px;
+}
+.testimonial-section .dot:hover {
+  background-color: #eee;
+}
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+  color: #ccc;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue;
+  margin-top: 20px;
+}
+.client-img {
+  position: relative;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 30px auto;
+}
+.client-img img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #b8b0b0;
+}

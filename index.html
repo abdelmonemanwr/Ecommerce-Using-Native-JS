@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>E - commerce</title>
+		<link rel="stylesheet" href="css/all.min.css" />
+		<link rel="stylesheet" href="css/resetStyles.css" />
+		<link rel="icon" type="image/x-icon" href="images/logo.png" />
+		<!-- icon title -->
+		<link rel="stylesheet" href="css/navbar.css" />
+		<!--add navbar css style as a plugin -->
+		<link rel="stylesheet" href="css/sidebar.css" />
+		<!--add sidebar css style as a plugin -->
+		<link rel="stylesheet" href="css/slider.css" />
+		<!--add sidebar css style as a plugin -->
+		<link rel="stylesheet" href="css/content.css" />
+		<!--add content css style as a plugin -->
+		<link rel="stylesheet" href="css/Back2TopBtn.css" />
+		<!--back2top css style as a plugin -->
+		<link rel="stylesheet" href="css/categories.css" />
+		<!-- categories css style as a plugin-->
+		<link rel="stylesheet" href="css/footer.css" />
+		<!--add footer css style as a plugin -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+	</head>
+
+	<body>
+		<!-- Navbar -->
+		<header>
+			<nav class="navbar">
+				<div class="first-half">
+					<div class="logo_par">
+						<img class="logo" src="images/logo.png" alt="Logo" />
+						<!-- <h1 class="title logo">Swift Cart</h1> -->
+					</div>
+					<ul>
+						<li>
+							<a href="index.html" target="_blank">Home</a>
+							<div class="drop-down-menu">
+								<div>Slider</div>
+								<div>Content</div>
+								<div>Categories</div>
+							</div>
+						</li>
+						<li>
+							<a href="about.html" target="_blank">About</a>
+						</li>
+						<li>
+							<a href="contact.html" target="_blank">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<div class="second-half">
+					<div class="cart-icon">
+						<div class="cart-icon-counter">0</div>
+						<i class="fad fa-shopping-cart"></i>
+					</div>
+					<div class="toggle-sidebar-icon">
+						<i class="fas fa-bars go"></i>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Sidebar -->
+		<div class="sidebar">
+			<ul>
+				<li>
+					<a href="index.html" target="_blank">Home</a>
+				</li>
+				<li>
+					<a href="about.html" target="_blank">About</a>
+				</li>
+				<li>
+					<a href="contact.html" target="_blank">Contact</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- slider -->
+		<div id="home" class="slider-container">
+			<div class="slider">
+				<div class="slide">
+					<img src="images/slider1.avif" alt="Slide 1" />
+				</div>
+				<div class="slide">
+					<img src="images/slider2.avif" alt="Slide 2" />
+				</div>
+				<div class="slide">
+					<img src="images/slider3.jpg" alt="Slide 3" />
+				</div>
+				<div class="slide">
+					<img src="images/slider4.avif" alt="Slide 4" />
+				</div>
+			</div>
+			<div class="prev-btn" onclick="changeSlide(-1)">
+				<i class="fas fa-chevron-left"></i>
+			</div>
+			<div class="next-btn" onclick="changeSlide(1)">
+				<i class="fas fa-chevron-right"></i>
+			</div>
+		</div>
+
+		<!-- content1 -->
+		<section id="about" class="about section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="about-img">
+							<img
+								id="contentImage"
+								class="img-fluid"
+								src="images/slider3.jpg"
+								alt="about image"
+							/>
+						</div>
+					</div>
+					<div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+						<div class="about-txt" id="content1">
+							<h2 class="aboutHeading">
+								We Provide Best Quality
+							</h2>
+
+							<p class="aboutDescription">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Sed ac accumsan mauris. Vivamus
+								suscipit, felis id fermentum cursus, odio turpis
+								dignissim elit, at tristique urna elit a ligula.
+							</p>
+
+							<p class="aboutDescription">
+								Integer auctor fringilla elit, at varius velit
+								pellentesque non. Curabitur tincidunt, purus ac
+								ultricies dignissim, dolor tortor laoreet purus,
+								vel vehicula leo lectus eu libero. Quisque
+								facilisis vulputate sapien vel vulputate.
+							</p>
+							<p id="readmore1">
+								Fusce et malesuada dui. Morbi vehicula, turpis
+								nec euismod ultrices, felis augue ullamcorper
+								odio, non venenatis arcu elit id dolor. Integer
+								eleifend sem a condimentum malesuada.
+							</p>
+							<button id="Btn1" class="btn1 btn-warning mt-3">
+								Learn More
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- content2 -->
+		<section id="about" class="about section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="about-img">
+							<img
+								id="contentImage"
+								class="img-fluid"
+								src="images/sliderv2.jpg"
+								alt="about image"
+							/>
+						</div>
+					</div>
+					<div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+						<div class="about-txt" id="content2">
+							<h2 class="aboutHeading">
+								We Provide Best Service
+							</h2>
+
+							<p class="aboutDescription">
+								Fusce et malesuada dui. Morbi vehicula, turpis
+								nec euismod ultrices, felis augue ullamcorper
+								odio, non venenatis arcu elit id dolor. Integer
+								eleifend sem a condimentum malesuada.
+							</p>
+
+							<p class="aboutDescription">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Sed ac accumsan mauris. Vivamus
+								suscipit, felis id fermentum cursus, odio turpis
+								dignissim elit, at tristique urna elit a ligula.
+							</p>
+
+							<p id="readmore2">
+								Integer auctor fringilla elit, at varius velit
+								pellentesque non. Curabitur tincidunt, purus ac
+								ultricies dignissim, dolor tortor laoreet purus,
+								vel vehicula leo lectus eu libero.
+							</p>
+
+							<button id="Btn2" class="btn2 btn-warning mt-3">
+								Learn More
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- categories -->
+		<section id="categories">
+			<!-- <h1>Categories</h1> -->
+			<div id="category-filter">
+				<button class="categoryType" onclick="filterProducts('All')">
+					All
+				</button>
+			</div>
+
+			<div id="products-container"></div>
+		</section>
+
+		<!-- back to top button -->
+		<div class="back-to-top">
+			<i class="fal fa-arrow-alt-circle-up up"></i>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<p>&copy; men3m@iti.org &copy;</p>
+		</footer>
+
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script src="js/navbar.js"></script>
+		<script src="js/sidebar.js"></script>
+		<script src="js/slider.js"></script>
+		<script src="js/content.js"></script>
+		<script src="js/Back2TopBtn.js"></script>
+		<script src="js/categories.js"></script>
+	</body>
+</html>

@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+
+#contentImage{
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+.about-img {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-txt {
+    padding: 20px;
+}
+
+.about-txt h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-txt p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+#readmore1, #readmore2{
+    display: none;
+}
+
+.btn1, .btn2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: skyblue;
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s ease;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn1:hover, .btn2:hover {
+    background-color: #ffc107;
+}
+
+.aboutHeading{
+    text-align: center;
+}
+
+.about{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    #contentImage{
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .row {
+        flex-direction: column;
+    }
+    #contentImage{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 320px) {
+    .row {
+        flex-direction: column;
+    }
+    #contentImage{
+        width: 100%;
+        height: 100px;
+    }
+    .about-img{
+        margin: auto;
+    }
+
+
+}

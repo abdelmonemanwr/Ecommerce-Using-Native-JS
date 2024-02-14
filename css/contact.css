@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    font-family: 'Poppins',sans-serif;
+}
+
+form{
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    padding: 15px;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    /* padding-top: 65px; */
+    margin-bottom: 50px;
+}
+
+@media(max-width:576px){
+    form{
+        width: 90%;
+    }
+}
+
+@media(min-width:576px){
+    form{
+        width: 90%;
+    }
+}
+
+@media(min-width:992px){
+    form{
+        width: 60%;
+    }
+}
+
+@media(min-width:1200px){
+    form{
+        width: 50%;
+    }
+}
+
+.container{
+    margin-top: 15vh;
+}
+
+.comment{
+    width: 100%;
+    height: 100px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(3, 92, 187, 0.5);
+}   
+
+.comment:focus{
+    outline: 1px solid rgb(11, 117, 216);
+    box-shadow: 0 0 5px rgba(3, 92, 187, 0.5);
+}
+
+
+form div, form button{
+    width: 100%;
+    border-radius: 25px;
+}
+
+.submit{
+    border: 1px solid gray;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 26px;
+    color: white;
+    background-color: cadetblue;
+}
+
+.submit:hover{
+    background-color: #427D9D;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+}
+
+form div p{
+    margin-left: 10px;
+    color: red;
+    display: none;
+}
+
+  input:focus
+  {
+    border-color: rgb(11, 117, 216);
+    box-shadow: 0 0 5px rgba(3, 92, 187, 0.5);
+  }
+  
+  input[type="text"]::placeholder {
+    color: #999;
+  }
+
+input[type="text"]:disabled {
+    background-color: #f5f5f5;
+    color: #888;
+}
+
+form img{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 50%;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width:576px){
+    form img{
+        width: 120px;
+        height: 120px;
+    }
+}

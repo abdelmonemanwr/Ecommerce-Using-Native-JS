@@ -1,0 +1,257 @@
+/* Reset styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: azure;
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header Styles */
+header {
+    background-color: skyblue;
+    color: beige;
+}
+/* Logo Styles */
+.logo {
+    width: 60px;
+    height: 60px;
+    margin: 0 35px 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: black;
+    text-shadow: 0 0 5px white;
+    transition: all 0.1s ease;
+    width: fit-content;
+    height: fit-content;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-half, .second-half{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-half{
+    gap: 10px;
+    margin-right: 5px;
+    /* justify-content: space-around; */
+}
+
+/* Navbar Styles */
+.navbar {
+    padding-block: 5px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    width: 100%; 
+    background-color: skyblue; 
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25px;
+    
+    /* padding: 0 5px; */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li {
+    padding: 5px;
+    position: relative;
+    display: inline-block;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.navbar ul li:hover {
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #eee;
+    background-color: dodgerblue;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.navbar ul li:hover a {
+    color: white;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.25s ease-in-out;
+    color: #1e4262;
+}
+
+/* Drop-down Menu Styles */
+.drop-down-menu {
+    z-index: 1;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 200px;
+    transition: all 0.75s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+nav ul li:hover .drop-down-menu {
+    opacity: 1;
+    background-color: cadetblue;
+    visibility: visible;
+    top: 100%;
+}
+
+.drop-down-menu div {
+    padding: 10px;
+    transition: all 1s ease-in-out;
+}
+
+.drop-down-menu div:not(:last-child) {
+    border-bottom: 2px solid whitesmoke;
+}
+
+.drop-down-menu div:hover {
+    cursor: pointer;
+    background-color: deepskyblue;
+    color: white;
+}
+
+/* Cart Icon Styles */
+.cart-icon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(128, 128, 128, 0.304);
+    padding: 5px;
+    position: relative;
+    box-shadow: 2px 2px 7px #546;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+}
+
+.cart-icon .cart-icon-counter {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: deepskyblue;
+    z-index: 1;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.cart-icon i {
+    font-size: 30px;
+    color: black;
+}
+
+/* Toggle Sidebar Icon Styles */
+.toggle-sidebar-icon {
+    width: 40px;
+    height: 40px;
+    box-shadow: 2px 2px 6px #546, -2px -2px 6px #546;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+}
+
+.toggle-sidebar-icon i {
+    color: black;
+    font-size: 30px;
+}
+
+/* Media Queries 1*/
+@media (max-width: 492px) {
+    .navbar {
+        width: 100%;
+        gap: 20px;
+        align-items: center; /* | */
+    }
+
+    .navbar ul li {
+        padding: 10px;
+    }
+
+    .drop-down-menu {
+        width: 100%;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .toggle-sidebar-icon {
+        display: flex;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .toggle-sidebar-icon i {
+        font-size: 30px;
+    }
+    
+    .cart-icon {
+        display: flex;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .cart-icon .cart-icon-counter{
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+    }
+
+    .cart-icon i {
+        font-size: 25px;
+    }
+
+    .cart-icon .cart-icon-counter{
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+    }
+
+}

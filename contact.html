@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact-Us</title>
+		<link rel="stylesheet" href="css/all.min.css" />
+		<link rel="stylesheet" href="css/resetStyles.css" />
+		<link rel="icon" type="image/x-icon" href="images/logo.png" />
+		<link rel="stylesheet" href="css/contact.css" />
+		<link rel="stylesheet" href="css/navbar.css" />
+		<link rel="stylesheet" href="css/sidebar.css" />
+		<link rel="stylesheet" href="css/Back2TopBtn.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<header>
+			<nav class="navbar">
+				<div class="first-half">
+					<div class="logo_par">
+						<img class="logo" src="images/logo.png" alt="Logo" />
+					</div>
+					<ul>
+						<li>
+							<a href="index.html" target="_blank">Home</a>
+							<div class="drop-down-menu">
+								<div>Slider</div>
+								<div>Content</div>
+								<div>Categories</div>
+							</div>
+						</li>
+						<li>
+							<a href="about.html" target="_blank">About</a>
+						</li>
+						<li>
+							<a href="contact.html" target="_blank">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<div class="second-half">
+					<div class="cart-icon">
+						<div class="cart-icon-counter">0</div>
+						<i class="fad fa-shopping-cart"></i>
+					</div>
+					<div class="toggle-sidebar-icon">
+						<i class="fas fa-bars go"></i>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Sidebar -->
+		<div class="sidebar">
+			<ul>
+				<li>
+					<a href="index.html" target="_blank">Home</a>
+				</li>
+				<li>
+					<a href="about.html" target="_blank">About</a>
+				</li>
+				<li>
+					<a href="contact.html" target="_blank">Contact</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="container">
+			<main>
+				<form>
+					<!-- <img src="images/logo.png" /> -->
+					<div class="full-name">
+						<input type="text" placeholder="Username" />
+						<p>error place</p>
+					</div>
+
+					<div class="email">
+						<input type="email" placeholder="Email" />
+						<p>error place</p>
+					</div>
+
+					<div class="password">
+						<input type="password" placeholder="Password" />
+						<p>error place</p>
+					</div>
+
+					<div class="confirm-password">
+						<input type="password" placeholder="Confirm Passwod" />
+						<p>error place</p>
+					</div>
+
+					<div class="message">
+						<textarea
+							class="comment"
+							type="text"
+							placeholder="Message"
+						></textarea>
+						<p>error place</p>
+					</div>
+
+					<button class="submit" type="submit">Send</button>
+				</form>
+			</main>
+		</div>
+
+		<!-- back to top button -->
+		<div class="back-to-top">
+			<i class="fal fa-arrow-alt-circle-up up"></i>
+		</div>
+
+		<!-- Footer -->
+		<footer style="position: fixed; margin-top: 20px">
+			<p>&copy; men3m@iti.org &copy;</p>
+		</footer>
+
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script src="js/navbar.js"></script>
+		<script src="js/sidebar.js"></script>
+		<script src="js/Back2TopBtn.js"></script>
+		<script src="js/contact.js"></script>
+	</body>
+</html>

@@ -1,0 +1,152 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.product-details-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    margin: 100px 100px 0 100px;
+}
+
+#addToCart{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 0 10px green;
+}
+
+#addToCart:hover{
+    background-color: skyblue;
+    color: black;
+}
+
+.img-box {
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    width: 35%;
+    height: 450px;
+    image-rendering: pixelated;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    padding: 10px;
+}
+
+
+#productImage {
+    width: 100%;
+    height: 100%;
+    object-fit: fit;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.product-details p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+#productDescription {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.stars p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.stars i {
+    font-size: 24px;
+    color: lightgray;
+}
+
+@media (max-width: 768px) {
+    .product-details-container {
+        flex-direction: column;
+    }
+    .img-box {
+        width: 100%;
+    }
+    .product-details {
+        width: 100%;
+    }
+    .product-details p {
+        font-size: 16px;
+    }
+    .stars p {
+        font-size: 14px;
+    }
+    .stars i {
+        font-size: 20px;
+    }
+    #productDescription {
+        font-size: 14px;
+    }
+    #addToCart {
+        font-size: 16px;
+    }
+    #addToCart:hover{
+        
+    }
+}
+
+
+@media (max-width: 480px) {
+    .product-details p {
+        font-size: 14px;
+    }
+    .stars p {
+        font-size: 12px;
+    }
+    .stars i {
+        font-size: 16px;
+    }
+    #productDescription {
+        font-size: 12px;
+    }
+    #addToCart {
+        font-size: 14px;
+    }
+
+    .img-box{
+        height: 80%;
+        width: 80%;
+    }
+
+    #productImage{
+        height: 100%;
+        width: 100%;
+    }
+}

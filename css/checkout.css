@@ -1,0 +1,25 @@
+.cashier{
+    width: 30px;
+    height: 30px;
+}
+
+.checkout {
+    width: 100%;
+    height: 100%;
+    margin: 0 -10px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.checkout:hover{
+    color: #0b5596;
+    /* background-color: skyblue; */
+    box-shadow: 3px 3px 7px beige, -3px -3px 7px beige;
+    transition: all 0.5s ease-in-out;
+}

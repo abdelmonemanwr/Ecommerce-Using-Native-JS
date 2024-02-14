@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>View Product</title>
+		<link rel="stylesheet" href="css/all.min.css" />
+		<link rel="stylesheet" href="css/resetStyles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+
+		<link rel="icon" type="image/x-icon" href="images/logo.png" />
+		<!-- icon title -->
+		<link rel="stylesheet" href="css/navbar.css" />
+		<!--add navbar css style as a plugin -->
+		<link rel="stylesheet" href="css/sidebar.css" />
+		<!--add sidebar css style as a plugin -->
+		<link rel="stylesheet" href="css/slider.css" />
+		<!--add sidebar css style as a plugin -->
+		<link rel="stylesheet" href="css/Back2TopBtn.css" />
+		<!--back2top css style as a plugin -->
+		<link rel="stylesheet" href="css/footer.css" />
+		<!--add footer css style as a plugin -->
+		<link rel="stylesheet" href="css/product.css" />
+	</head>
+	<body>
+		<!-- Navbar -->
+		<header>
+			<nav class="navbar">
+				<div class="first-half">
+					<div class="logo_par">
+						<img class="logo" src="images/logo.png" alt="Logo" />
+						<!-- <h1 class="title logo">Swift Cart</h1> -->
+					</div>
+					<ul>
+						<li>
+							<a href="index.html" target="_blank">Home</a>
+							<div class="drop-down-menu">
+								<div>Slider</div>
+								<div>Content</div>
+								<div>Categories</div>
+							</div>
+						</li>
+						<li>
+							<a href="about.html" target="_blank">About</a>
+						</li>
+						<li>
+							<a href="contact.html" target="_blank">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<div class="second-half">
+					<div class="cart-icon">
+						<div class="cart-icon-counter">0</div>
+						<i class="fad fa-shopping-cart"></i>
+					</div>
+					<div class="toggle-sidebar-icon">
+						<i class="fas fa-bars go"></i>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Sidebar -->
+		<div class="sidebar">
+			<ul>
+				<li>
+					<a href="index.html" target="_blank">Home</a>
+				</li>
+				<li>
+					<a href="about.html" target="_blank">About</a>
+				</li>
+				<li>
+					<a href="contact.html" target="_blank">Contact</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="product-details-container">
+			<div class="img-box">
+				<img id="productImage" alt="Product Image" />
+			</div>
+			<div class="product-details">
+				<p id="productCategory">Category</p>
+				<p id="productName">Name</p>
+				<p id="productPrice">Price</p>
+				<!-- stars  -->
+				<div class="stars" id="productRating"></div>
+				<p id="productDescription">Description</p>
+				<button id="addToCart">Add to Cart</button>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer style="position: fixed; margin-top: 20px">
+			<p>&copy; men3m@iti.org &copy;</p>
+		</footer>
+
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script src="js/navbar.js"></script>
+		<script src="js/sidebar.js"></script>
+		<script src="js/product.js"></script>
+	</body>
+</html>
